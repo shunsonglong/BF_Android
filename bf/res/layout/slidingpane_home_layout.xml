@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/back_title" >
+
+        <ImageView
+            android:id="@+id/imageview_above_more"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/button_above_more" />
+
+        <TextView
+            android:id="@+id/tv_common_above_head"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/abc_spinner_ab_default_holo_light"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:text=""
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/imageview_above_search"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/abc_ic_search" />
+    </RelativeLayout>
+
+    <com.dt.zero.ui.widget.RefreshableListView
+        android:id="@+id/mineList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:scrollbars="none" >
+    </com.dt.zero.ui.widget.RefreshableListView>
+
+</LinearLayout>

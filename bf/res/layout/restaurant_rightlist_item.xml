@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dip"
+    android:background="#FFF" >
+
+    <ImageView
+        android:id="@+id/commodity_image"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/icon_rest"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" />
+    <TextView
+        android:id="@+id/commodity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/commodity_image"
+        android:background="#FFF"
+        android:height="42dp"
+        android:textColor="#FF000000" />
+
+    <RatingBar
+        android:id="@+id/commodity_rate"
+        style="@style/RatingBar.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commodity_name"
+        android:layout_toRightOf="@id/commodity_image"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/commodity_buynums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commodity_name"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/foodlist_bg_foodnum"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingBottom="1.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:textColor="@color/black"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
