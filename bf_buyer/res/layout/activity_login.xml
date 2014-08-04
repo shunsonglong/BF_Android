@@ -5,8 +5,8 @@
     android:background="@drawable/android_layout_bg"
     android:orientation="vertical" >
 
-    <!-- Tilte -->
-
+    <!-- Title -->
+<!--  
     <RelativeLayout
         android:id="@+id/personal_top_layout"
         android:layout_width="fill_parent"
@@ -30,10 +30,11 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="@dimen/login_margin_start"
             android:gravity="right|center_vertical"
+            android:text="@string/register"
             android:textColor="@color/white"
             android:textSize="@dimen/large_text_size" />
     </RelativeLayout>
-
+-->
     <!-- user name -->
 
     <LinearLayout
@@ -50,12 +51,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:ems="10"
+            android:ems="20"
             android:focusableInTouchMode="true"
             android:hint="@string/inputaccount"
             android:padding="5.0dip"
-            android:textColor="#ff3b3b3b"
-            android:textSize="16.0sp" >
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_text_size" >
         </EditText>
     </LinearLayout>
 
@@ -74,13 +75,13 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:ems="10"
+            android:ems="20"
             android:focusableInTouchMode="true"
             android:hint="@string/inputpassword"
             android:inputType="textPassword"
             android:padding="5.0dip"
-            android:textColor="#ff3b3b3b"
-            android:textSize="16.0sp" >
+            android:textColor="@color/black"
+            android:textSize="@dimen/middle_text_size" >
         </EditText>
     </LinearLayout>
 
@@ -97,11 +98,11 @@
             android:id="@+id/login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/android_title_bg"
+            android:background="@drawable/login_register_bg"
             android:gravity="center"
             android:text="@string/login_btn"
             android:textColor="#fff"
-            android:textSize="20sp" />
+            android:textSize="@dimen/large_text_size" />
     </LinearLayout>
 
     <RelativeLayout
@@ -120,7 +121,7 @@
             android:layout_alignParentLeft="true"
             android:text="@string/forget_password"
             android:textColor="@color/black"
-            android:textSize="16.0sp" />
+            android:textSize="@dimen/small_text_size" />
     </RelativeLayout>
 
 </LinearLayout>

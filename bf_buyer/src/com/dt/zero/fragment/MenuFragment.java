@@ -2,8 +2,8 @@ package com.dt.zero.fragment;
 
 import com.dt.zero.R;
 import com.dt.zero.ui.activity.HomeActivity;
-import com.dt.zero.ui.activity.LoginActivity;
 import com.dt.zero.ui.activity.RestaurantActivity;
+import com.dt.zero.ui.setup.LoginActivity;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -38,7 +38,15 @@
             android:name=".ui.activity.FoodDetailActivity"
             android:launchMode="singleTop" >
         </activity>
-        <activity android:name=".ui.activity.LoginActivity" >
+        <activity
+            android:name="com.dt.zero.ui.setup.LoginActivity"
+            android:label="@string/login"
+            android:logo="@drawable/abc_ic_ab_back_mtrl_am_alpha" >
+        </activity>
+        <activity
+            android:name="com.dt.zero.ui.setup.RegisterInputPNActivity"
+            android:label="@string/register"
+            android:logo="@drawable/abc_ic_ab_back_mtrl_am_alpha" >
         </activity>
     </application>
 
