@@ -2,7 +2,18 @@
 <resources>
 
     <string name="app_name">bf_seller</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <!-- welcome -->
+    <string name="welcome_image_description">welcome image</string>
+    <string name="app_version">1.0</string>
 
+    <!-- setup -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    
+    <!-- register -->
+    <string name="inputphonenumberdesc">请确认你的国家和地区并输入手机号</string>
+    <string name="inputphonenumber">请输入手机号</string>
+    <string name="action_next">下一步</string>
 </resources>
