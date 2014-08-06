@@ -16,4 +16,9 @@
     <string name="inputphonenumberdesc">请确认你的国家和地区并输入手机号</string>
     <string name="inputphonenumber">请输入手机号</string>
     <string name="action_next">下一步</string>
+    <string name="phone_number_is_null">手机号不能为空</string>
+    <string name="input_security_code">请填写验证码</string>
+    <string name="security_code_desc">我们已发送验证码短信到这个号码</string>
+    <string name="reget_security_code">重新获取验证码</string>
+    <string name="waiting_get_security_code">秒后重新获取</string>
 </resources>

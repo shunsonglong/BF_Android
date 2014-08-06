@@ -17,5 +17,6 @@
     <!-- register screen -->
     <dimen name="login_input_height">40dip</dimen>
     <dimen name="login_margin_start">10dip</dimen>
+    <dimen name="register_margin_top">20dip</dimen>
 
 </resources>
