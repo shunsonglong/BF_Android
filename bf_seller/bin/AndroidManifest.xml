@@ -24,12 +24,17 @@
         <activity android:name=".setup.SetupActivity" >
         </activity>
         <activity
-            android:name=".setup.Register1stActivity"
+            android:name=".setup.InputPhoneNumber"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/register" >
         </activity>
         <activity
-            android:name=".setup.Register2ndActivity"
+            android:name=".setup.RequestSecurityCode"
+            android:icon="@drawable/ic_kdwd_back"
+            android:label="@string/input_security_code" >
+        </activity>
+        <activity
+            android:name=".setup.InputPassWord"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/input_security_code" >
         </activity>

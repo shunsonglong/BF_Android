@@ -11,17 +11,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Register2ndActivity extends Activity {
+public class RequestSecurityCode extends Activity {
+	private static String TAG = "Register2ndActivity";
 	private TextView mPhoneNumber;
 	private Button mGetSecuritycode;
 	private Timer mTimer;
 	private int count;
+	private String phoneNumber;
 	
 	private final int MSG_REFREASH_BUTTON = 1;
 	private final int MSG_ENABLE_BUTTON = 2;
@@ -32,7 +35,6 @@ public class Register2ndActivity extends Activity {
 			case MSG_REFREASH_BUTTON:
 				String tmp = (60-count) + AppMgr.getInstance().getString(R.string.waiting_get_security_code);
 				mGetSecuritycode.setText(tmp);
-				mGetSecuritycode.setEnabled(false);
 				break;
 			case MSG_ENABLE_BUTTON:
 				if (mTimer != null) {
@@ -50,10 +52,10 @@ public class Register2ndActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_register2nd);
+		setContentView(R.layout.activity_requestsecuritycode);
 		mPhoneNumber = (TextView) findViewById(R.id.phonenumber);
 		Intent intent = getIntent();
-		String phoneNumber = intent.getStringExtra("phonenumber");
+		phoneNumber = intent.getStringExtra("phonenumber");
 		mPhoneNumber.setText(phoneNumber);
 		mGetSecuritycode = (Button) findViewById(R.id.getsecritycode);
 		mGetSecuritycode.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +63,8 @@ public class Register2ndActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				// TODO Auto-generated method stub
-
+				Log.d(TAG, "Button onclick");
+				requestSecurityCode();
 			}
 		});
 		mGetSecuritycode.setEnabled(false);
@@ -81,7 +84,7 @@ public class Register2ndActivity extends Activity {
 			finish();
 			break;
 		case R.id.action_next:
-			sendRequest();
+			verifySecurityCode();
 			break;
 		}
 		return super.onOptionsItemSelected(item);
@@ -89,7 +92,7 @@ public class Register2ndActivity extends Activity {
 
 	public void startTimer() {
 		if (mTimer != null) {
-			mTimer.cancel();
+			mTimer.cancel();  
 		}
 		mTimer = new Timer();
 		mTimer.schedule(new TimerTask() {
@@ -109,7 +112,14 @@ public class Register2ndActivity extends Activity {
 		}, 1000, 1000);
 	}
 
-	public void sendRequest() {
+	public void verifySecurityCode() {
+		Intent intent = new Intent(RequestSecurityCode.this, InputPassWord.class);
+		String phoneNumber = mPhoneNumber.getText().toString();
+		intent.putExtra("phonenumber", phoneNumber);
+		startActivity(intent);
+	}
+	
+	public void requestSecurityCode() {
 
 	}
 

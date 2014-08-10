@@ -37,7 +37,7 @@ public class SetupActivity extends Activity {
 			public void onClick(View view) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(SetupActivity.this,
-						Register1stActivity.class);
+						InputPhoneNumber.class);
 				startActivityForResult(intent, START_ACTIVITY_FOR_REGISTER);
 			}
 		});

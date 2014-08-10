@@ -21,4 +21,9 @@
     <string name="security_code_desc">我们已发送验证码短信到这个号码</string>
     <string name="reget_security_code">重新获取验证码</string>
     <string name="waiting_get_security_code">秒后重新获取</string>
+    <string name="inputpassword">请输入6-16位密码</string>
+    <string name="inputpasswordagain">请再重复输入一遍</string>
+    <string name="inputpassworddesc">请设置密码</string>
+    <string name="password_is_null">密码不能为空</string>
+    <string name="password_not_same">密码不一致</string>
 </resources>
