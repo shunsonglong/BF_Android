@@ -26,4 +26,9 @@
     <string name="inputpassworddesc">请设置密码</string>
     <string name="password_is_null">密码不能为空</string>
     <string name="password_not_same">密码不一致</string>
+    
+    <!-- network -->
+    <string name="timeout">连接超时</string>
+    <string name="unknown_network_error">未知网络错误</string>
+    <string name="unknown_error_code">未知错误码</string>
 </resources>

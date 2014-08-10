@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="com.dt.bf_seller.app.AppMgr"
@@ -29,7 +31,7 @@
             android:label="@string/register" >
         </activity>
         <activity
-            android:name=".setup.RequestSecurityCode"
+            android:name=".setup.VerifySecurityCode"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/input_security_code" >
         </activity>

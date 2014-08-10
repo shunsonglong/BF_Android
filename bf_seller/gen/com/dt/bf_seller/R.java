@@ -1674,7 +1674,7 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
-        public static final int register_input_phonenumber=0x7f0c0001;
+        public static final int register=0x7f0c0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1738,6 +1738,11 @@ containing a value of this type.
         public static final int reget_security_code=0x7f0a0019;
         public static final int register=0x7f0a0012;
         public static final int security_code_desc=0x7f0a0018;
+        /**  network 
+         */
+        public static final int timeout=0x7f0a0020;
+        public static final int unknown_error_code=0x7f0a0022;
+        public static final int unknown_network_error=0x7f0a0021;
         public static final int waiting_get_security_code=0x7f0a001a;
         /**  welcome 
          */
