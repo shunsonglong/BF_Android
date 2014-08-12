@@ -4,6 +4,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     
+    <dimen name="divider_line">1dp</dimen>
+    
     <!-- font size -->
     <dimen name="smallest_font_size">14sp</dimen>
     <dimen name="small_text_size">16sp</dimen>
@@ -11,12 +13,12 @@
     <dimen name="large_text_size">24sp</dimen>
     
     <!-- setup screen -->
-    <dimen name="login_button_width">160dip</dimen>
-    <dimen name="login_margin_top">10dip</dimen>
+    <dimen name="login_button_width">160dp</dimen>
+    <dimen name="login_margin_top">10dp</dimen>
+    <dimen name="setup_singleline_height">48dp</dimen>
     
     <!-- register screen -->
-    <dimen name="login_input_height">40dip</dimen>
-    <dimen name="login_margin_start">10dip</dimen>
-    <dimen name="register_margin_top">20dip</dimen>
+    <dimen name="login_margin_start">10dp</dimen>
+    <dimen name="register_margin_top">20dp</dimen>
 
 </resources>

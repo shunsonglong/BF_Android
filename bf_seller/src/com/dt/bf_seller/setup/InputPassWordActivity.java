@@ -29,7 +29,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class InputPassWord extends Activity {
+public class InputPassWordActivity extends Activity {
 	private final String TAG = "InputPassWord";
 	private EditText inputPW;
 	private EditText inputPW2;
@@ -138,11 +138,11 @@ public class InputPassWord extends Activity {
 		protected void onPostExecute(String result) {
 			if (result != null && "true".equals(result)) {
 				Log.d(TAG, "result = " + result);
-				Toast.makeText(InputPassWord.this, "register success",
+				Toast.makeText(InputPassWordActivity.this, "register success",
 						Toast.LENGTH_SHORT).show();
 			} else {
 				Log.d(TAG, "error");
-				Toast.makeText(InputPassWord.this, "register fail",
+				Toast.makeText(InputPassWordActivity.this, "register fail",
 						Toast.LENGTH_SHORT).show();
 			}
 

@@ -1430,21 +1430,22 @@ containing a value of this type.
          (the screen is in portrait). This may be either a fraction or a dimension.
          */
         public static final int dialog_fixed_width_minor=0x7f080012;
-        public static final int large_text_size=0x7f08001a;
+        public static final int divider_line=0x7f080017;
+        public static final int large_text_size=0x7f08001b;
         /**  setup screen 
          */
-        public static final int login_button_width=0x7f08001b;
+        public static final int login_button_width=0x7f08001c;
         /**  register screen 
          */
-        public static final int login_input_height=0x7f08001d;
-        public static final int login_margin_start=0x7f08001e;
-        public static final int login_margin_top=0x7f08001c;
-        public static final int middle_text_size=0x7f080019;
-        public static final int register_margin_top=0x7f08001f;
-        public static final int small_text_size=0x7f080018;
+        public static final int login_margin_start=0x7f08001f;
+        public static final int login_margin_top=0x7f08001d;
+        public static final int middle_text_size=0x7f08001a;
+        public static final int register_margin_top=0x7f080020;
+        public static final int setup_singleline_height=0x7f08001e;
+        public static final int small_text_size=0x7f080019;
         /**  font size 
          */
-        public static final int smallest_font_size=0x7f080017;
+        public static final int smallest_font_size=0x7f080018;
     }
     public static final class drawable {
         public static final int abc_ab_bottom_solid_dark_holo=0x7f020000;
@@ -1667,10 +1668,11 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_inputpassword=0x7f030018;
         public static final int activity_inputphonenumber=0x7f030019;
-        public static final int activity_requestsecuritycode=0x7f03001a;
-        public static final int activity_setup=0x7f03001b;
-        public static final int activity_start=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int activity_login=0x7f03001a;
+        public static final int activity_requestsecuritycode=0x7f03001b;
+        public static final int activity_setup=0x7f03001c;
+        public static final int activity_start=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1721,6 +1723,7 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000e;
         public static final int app_name=0x7f0a000d;
         public static final int app_version=0x7f0a0010;
+        public static final int find_password=0x7f0a0020;
         public static final int input_security_code=0x7f0a0017;
         public static final int inputpassword=0x7f0a001b;
         public static final int inputpasswordagain=0x7f0a001c;
@@ -1740,9 +1743,9 @@ containing a value of this type.
         public static final int security_code_desc=0x7f0a0018;
         /**  network 
          */
-        public static final int timeout=0x7f0a0020;
-        public static final int unknown_error_code=0x7f0a0022;
-        public static final int unknown_network_error=0x7f0a0021;
+        public static final int timeout=0x7f0a0021;
+        public static final int unknown_error_code=0x7f0a0023;
+        public static final int unknown_network_error=0x7f0a0022;
         public static final int waiting_get_security_code=0x7f0a001a;
         /**  welcome 
          */

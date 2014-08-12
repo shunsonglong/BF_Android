@@ -26,6 +26,7 @@
     <string name="inputpassworddesc">请设置密码</string>
     <string name="password_is_null">密码不能为空</string>
     <string name="password_not_same">密码不一致</string>
+    <string name="find_password">找回密码</string>
     
     <!-- network -->
     <string name="timeout">连接超时</string>

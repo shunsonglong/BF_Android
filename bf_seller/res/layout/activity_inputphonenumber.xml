@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/login_input_height"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/login_margin_start"
         android:layout_marginRight="@dimen/login_margin_start"
         android:layout_marginTop="@dimen/login_margin_top"
@@ -27,7 +27,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/login_input_height"
+        android:layout_height="@dimen/setup_singleline_height"
         android:layout_marginLeft="@dimen/login_margin_start"
         android:layout_marginRight="@dimen/login_margin_start"
         android:layout_marginTop="@dimen/login_margin_top"
@@ -37,7 +37,7 @@
         <EditText
             android:id="@+id/inputphonenumber"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:background="@null"
             android:ems="12"
             android:hint="@string/inputphonenumber"

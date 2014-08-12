@@ -14,6 +14,7 @@ public class SetupActivity extends Activity {
 	private Button mRegister;
 
 	public static int START_ACTIVITY_FOR_REGISTER = 1000;
+	public static int START_ACTIVITY_FOR_LOGIN = 1001;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class SetupActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				// TODO Auto-generated method stub
-
+				startLoginActivity();
 			}
 		});
 		mRegister = (Button) findViewById(R.id.register);
@@ -36,9 +37,7 @@ public class SetupActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(SetupActivity.this,
-						InputPhoneNumber.class);
-				startActivityForResult(intent, START_ACTIVITY_FOR_REGISTER);
+				startRegisterActivity();
 			}
 		});
 
@@ -51,6 +50,23 @@ public class SetupActivity extends Activity {
 			case RESULT_OK:
 				break;
 			}
+		} else if (requestCode == START_ACTIVITY_FOR_LOGIN) {
+			switch (resultCode) {
+			case RESULT_OK:
+				break;
+			}
 		}
+	}
+	
+	public void startRegisterActivity() {
+		Intent intent = new Intent(SetupActivity.this,
+				InputPhoneNumberActivity.class);
+		startActivityForResult(intent, START_ACTIVITY_FOR_REGISTER);
+	}
+	
+	public void startLoginActivity() {
+		Intent intent = new Intent(SetupActivity.this,
+				LoginActivity.class);
+		startActivityForResult(intent, START_ACTIVITY_FOR_LOGIN);
 	}
 }

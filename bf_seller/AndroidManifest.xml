@@ -26,19 +26,24 @@
         <activity android:name=".setup.SetupActivity" >
         </activity>
         <activity
-            android:name=".setup.InputPhoneNumber"
+            android:name=".setup.InputPhoneNumberActivity"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/register" >
         </activity>
         <activity
-            android:name=".setup.VerifySecurityCode"
+            android:name=".setup.VerifySecurityCodeActivity"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/input_security_code" >
         </activity>
         <activity
-            android:name=".setup.InputPassWord"
+            android:name=".setup.InputPassWordActivity"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/input_security_code" >
+        </activity>
+        <activity
+            android:name=".setup.LoginActivity"
+            android:icon="@drawable/ic_kdwd_back"
+            android:label="@string/login" >
         </activity>
     </application>
 

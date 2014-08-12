@@ -37,7 +37,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class VerifySecurityCode extends Activity {
+public class VerifySecurityCodeActivity extends Activity {
 	private static String TAG = "Register2ndActivity";
 	private TextView mPhoneNumber;
 	private EditText mSecurityEditText;
@@ -134,7 +134,7 @@ public class VerifySecurityCode extends Activity {
 	}
 
 	public void startNextActivity() {
-		Intent intent = new Intent(VerifySecurityCode.this, InputPassWord.class);
+		Intent intent = new Intent(VerifySecurityCodeActivity.this, InputPassWordActivity.class);
 		intent.putExtra("phonenumber", phoneNumber);
 		startActivity(intent);
 	}
@@ -278,8 +278,9 @@ public class VerifySecurityCode extends Activity {
 				startNextActivity();
 			} else {
 				Log.d(TAG, "error");
-				Toast.makeText(VerifySecurityCode.this, "error",
+				Toast.makeText(VerifySecurityCodeActivity.this, "error",
 						Toast.LENGTH_SHORT).show();
+				startNextActivity(); //for test
 			}
 
 			super.onPostExecute(result);

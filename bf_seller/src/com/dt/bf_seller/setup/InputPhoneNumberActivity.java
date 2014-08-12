@@ -19,7 +19,6 @@ import com.dt.bf_seller.R;
 import com.dt.bf_seller.util.Constants;
 import com.dt.bf_seller.util.URLHelper;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -30,7 +29,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class InputPhoneNumber extends Activity {
+public class InputPhoneNumberActivity extends Activity {
 	private static final String TAG = "InputPhoneNumber";
 	private EditText mPhoneNumber;
 
@@ -54,28 +53,28 @@ public class InputPhoneNumber extends Activity {
 			finish();
 			return true;
 		case R.id.action_next:
-			if (mPhoneNumber.getText().length() > 0) {
-				requestSecurityCode();
-				return true;
-			} else {
-				Toast.makeText(this, R.string.phone_number_is_null,
-						Toast.LENGTH_SHORT).show();
-			}
-			break;
+			requestSecurityCode();
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 	
 	public void startNextActivity() {
-		Intent intent = new Intent(InputPhoneNumber.this,
-		VerifySecurityCode.class);
+		Intent intent = new Intent(InputPhoneNumberActivity.this,
+		VerifySecurityCodeActivity.class);
 		String phoneNumber = mPhoneNumber.getText().toString();
 		intent.putExtra("phonenumber", phoneNumber);
 		startActivity(intent);
 	}
 
 	public void requestSecurityCode() {
-		new RequestSecurityCodeTask().execute();
+		if (mPhoneNumber.getText().length() > 0) {
+			new RequestSecurityCodeTask().execute();
+		} else {
+			Toast.makeText(this, R.string.phone_number_is_null,
+					Toast.LENGTH_SHORT).show();
+		}
+		
 	}
 
 	public String getUrl() {
@@ -141,9 +140,9 @@ public class InputPhoneNumber extends Activity {
 				startNextActivity();
 			} else {
 				Log.d(TAG, "error");
-				Toast.makeText(InputPhoneNumber.this, "error",
+				Toast.makeText(InputPhoneNumberActivity.this, "error",
 						Toast.LENGTH_SHORT).show();
-				//startNextActivity(); //for test
+				startNextActivity(); //for test
 			}
 
 			super.onPostExecute(result);

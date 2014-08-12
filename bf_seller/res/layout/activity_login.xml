@@ -4,26 +4,32 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <!-- TEXT View -->
+    <!-- pass word -->
 
-    <LinearLayout
+   <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/setup_singleline_height"
         android:layout_marginLeft="@dimen/login_margin_start"
         android:layout_marginRight="@dimen/login_margin_start"
         android:layout_marginTop="@dimen/login_margin_top"
         android:orientation="vertical" >
 
-        <TextView
+        <EditText
+            android:id="@+id/inputphonenumber"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/inputpassworddesc"
-            android:textColor="@color/gray"
+            android:layout_height="fill_parent"
+            android:background="@drawable/text_field"
+            android:ems="12"
+            android:focusableInTouchMode="true"
+            android:hint="@string/inputphonenumber"
+            android:inputType="numberSigned"
+            android:padding="5.0dip"
+            android:textColor="@color/black"
             android:textSize="@dimen/small_text_size" >
-        </TextView>
-    </LinearLayout>
+        </EditText>
 
-    <!-- pass word -->
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -48,27 +54,25 @@
         </EditText>
     </LinearLayout>
 
+    <!-- TEXT View -->
+
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/setup_singleline_height"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/login_margin_start"
         android:layout_marginRight="@dimen/login_margin_start"
-        android:layout_marginTop="@dimen/divider_line"
+        android:layout_marginTop="@dimen/login_margin_top"
+        android:gravity="right"
         android:orientation="vertical" >
 
-        <EditText
-            android:id="@+id/inputpassword2"
+        <TextView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:background="@drawable/text_field"
-            android:ems="12"
-            android:focusableInTouchMode="true"
-            android:hint="@string/inputpasswordagain"
-            android:inputType="textPassword"
-            android:padding="5.0dip"
-            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="@string/find_password"
+            android:textColor="@color/gray"
+            android:gravity="right"
             android:textSize="@dimen/small_text_size" >
-        </EditText>
+        </TextView>
     </LinearLayout>
 
 </LinearLayout>
