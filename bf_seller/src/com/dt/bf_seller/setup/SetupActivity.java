@@ -53,6 +53,10 @@ public class SetupActivity extends Activity {
 		} else if (requestCode == START_ACTIVITY_FOR_LOGIN) {
 			switch (resultCode) {
 			case RESULT_OK:
+				String result_value = data.getStringExtra("result");
+	            if(result_value!= null && result_value.equals("success")) {
+	            	finish();
+	            }
 				break;
 			}
 		}
