@@ -3,31 +3,22 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    
     <dimen name="divider_line">1dp</dimen>
-
+    
     <!-- font size -->
     <dimen name="smallest_font_size">14sp</dimen>
     <dimen name="small_text_size">16sp</dimen>
     <dimen name="middle_text_size">20sp</dimen>
     <dimen name="large_text_size">24sp</dimen>
-
+    
     <!-- setup screen -->
     <dimen name="login_button_width">160dp</dimen>
     <dimen name="login_margin_top">10dp</dimen>
     <dimen name="setup_singleline_height">48dp</dimen>
-
+    
     <!-- register screen -->
     <dimen name="login_margin_start">10dp</dimen>
     <dimen name="register_margin_top">20dp</dimen>
-
-    <!-- main screen -->
-    <dimen name="main_topview_height">40dp</dimen>
-    <dimen name="main_middleview_height">160dp</dimen>
-    <dimen name="main_bottomview_height">40dp</dimen>
-    
-    <dimen name="main_message_padding">30dp</dimen>
-    <dimen name="main_setting_padding">30dp</dimen>
-    
-    <dimen name="main_tablerow_margin_start">10dp</dimen>
 
 </resources>

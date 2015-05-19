@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
-
+    
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -42,11 +42,6 @@
         </activity>
         <activity
             android:name=".setup.LoginActivity"
-            android:icon="@drawable/ic_kdwd_back"
-            android:label="@string/login" >
-        </activity>
-        <activity
-            android:name=".main.MainActivity"
             android:icon="@drawable/ic_kdwd_back"
             android:label="@string/login" >
         </activity>

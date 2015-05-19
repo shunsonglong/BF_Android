@@ -3,7 +3,7 @@
 
     <string name="app_name">bf_seller</string>
     <string name="action_settings">Settings</string>
-
+    
     <!-- welcome -->
     <string name="welcome_image_description">welcome image</string>
     <string name="app_version">1.0</string>
@@ -11,7 +11,7 @@
     <!-- setup -->
     <string name="login">登录</string>
     <string name="register">注册</string>
-
+    
     <!-- register -->
     <string name="inputphonenumberdesc">请确认你的国家和地区并输入手机号</string>
     <string name="inputphonenumber">请输入手机号</string>
@@ -27,16 +27,9 @@
     <string name="password_is_null">密码不能为空</string>
     <string name="password_not_same">密码不一致</string>
     <string name="find_password">找回密码</string>
-
-    <!-- main activity -->
-    <string name="top_view_image_desc">title</string>
-    <string name="bottom_view_message_image_desc">message</string>
-    <string name="bottom_view_pagerind_image_desc">pager indicator</string>
-    <string name="bottom_view_settings_image_desc">setting</string>
-
+    
     <!-- network -->
     <string name="timeout">连接超时</string>
     <string name="unknown_network_error">未知网络错误</string>
     <string name="unknown_error_code">未知错误码</string>
-
 </resources>
